@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		<title>Tichu Counter</title>
+		
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<link rel="stylesheet" href="styles.css">
-		
-        <title>Tichu Counter</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
 
-        <table id="PointsTable">
+        <table id="PointsTable" class="table table-bordered text-center">
             <tr>
-              <th>Team A</th>
-              <th>Team B</th>
+              <th class="h1">Team A</th>
+              <th class="h1">Team B</th>
             </tr>
             <tr>
-              <td id="SumA">0</td>
-              <td id="SumB">0</td>
+              <td id="SumA" class="h2">0</td>
+              <td id="SumB" class="h2">0</td>
             </tr>
         </table>
+		
+		<div class="text-center">
+			<div>
+			  <input id="Apoints" type="number" inputmode="numeric" step="5" min="-225" max="400" value="0" onfocus="clearText(this)" onchange="supplement(this)">
+			  <button id="addButton" class="btn btn-primary btn-lg" onclick="addPoints()">Add</button>
+			  <input id="Bpoints" type="number" inputmode="numeric" step="5" min="-225" max="400" value="0" onfocus="clearText(this)" onchange="supplement(this)">
+			</div><br>
 
-        <div>
-          <input id="Apoints" type="number" inputmode="numeric" step="5" min="-225" max="400" value="0" onfocus="clearText(this)" onchange="supplement(this)">
-          <button id="addButton" onclick="addPoints()">Add</button>
-          <input id="Bpoints" type="number" inputmode="numeric" step="5" min="-225" max="400" value="0" onfocus="clearText(this)" onchange="supplement(this)">
-        </div>
-
-        <div>
-          <button id="A+100" onclick="update(this)">+100</button>
-          <button id="B+100" onclick="update(this)">+100</button>
-        </div>
-        
-        <div>
-          <button id="A-100" onclick="update(this)">-100</button>
-          <button id="B-100" onclick="update(this)">-100</button>
-        </div>
+			<div>
+			  <button id="A+100" class="btn btn-success" onclick="update(this)">+100</button>
+			  <button id="B+100" class="btn btn-success" onclick="update(this)">+100</button>
+			</div><br>
+			
+			
+			<div>
+			  <button id="A-100" class="btn btn-danger" onclick="update(this)">-100</button>
+			  <button id="B-100" class="btn btn-danger" onclick="update(this)">-100</button>
+			</div>
+		</div>
 
         <script src="scripts.js"></script>
 
