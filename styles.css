@@ -4,7 +4,7 @@ body {
 
 table {
   font-family: arial, sans-serif;
-  font-size: 50px;
+  font-size: 35px;
   border-collapse: collapse;
   width: 100%;
 }
@@ -21,13 +21,13 @@ div {
 }
 
 input {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 #addButton {
   padding: 10px 16px;
   font-family: arial, sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   margin: 0px 30px;
 }
@@ -35,7 +35,7 @@ input {
 button {
   padding: 8px 10px;
   font-family: arial, sans-serif;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0px 75px;
 }
@@ -43,11 +43,11 @@ button {
 #SumA {
   font-weight: bold;
   border-top: hidden;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 #SumB {
   font-weight: bold;
   border-top: hidden;
-  font-size: 60px;
+  font-size: 40px;
 }
